@@ -140,7 +140,21 @@ def create_nsg_parameters():
               'direction': 'inbound',
               'name': 'Glboal_Rule_03'
           },
-
+          {
+              # 'id': None,
+              'description': "Global rule",
+              'protocol': 'TCP',
+              'source_port_range': '*',
+              'destination_port_range': "30",
+              'source_address_prefix': '*',
+              'destination_address_prefix': '*',
+              'access': 'allow',
+              'priority': "2004",
+              'direction': 'inbound',
+              'name': 'Glboal_Rule_04'
+          },
+            
+            
         ]
     }
 
